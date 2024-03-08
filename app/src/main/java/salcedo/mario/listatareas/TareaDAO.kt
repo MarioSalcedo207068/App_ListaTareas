@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 
 @Dao
 interface TareaDAO {
@@ -17,5 +18,6 @@ interface TareaDAO {
     @Delete
     fun eliminarTarea(tarea: Tarea)
 
-
+    @Update
+    fun actualizarTarea(tarea: Tarea)
 }
